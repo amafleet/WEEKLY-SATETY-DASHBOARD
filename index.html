@@ -42,6 +42,12 @@
 
   <h2>📋 Violation Details</h2>
 
+  <div class="toolbar">
+    <button id="expandAllBtn" type="button">Expand All</button>
+    <button id="collapseAllBtn" type="button">Collapse All</button>
+    <button id="downloadExcelBtn" type="button">Download Excel</button>
+  </div>
+
   <table id="violationTable">
     <thead>
       <tr>
@@ -58,12 +64,6 @@
     <tfoot id="grandTotalFoot"></tfoot>
   </table>
 
-  <div class="toolbar">
-    <button id="expandAllBtn" type="button">Expand All</button>
-    <button id="collapseAllBtn" type="button">Collapse All</button>
-    <button id="downloadExcelBtn" type="button">Download Excel</button>
-  </div>
-
   <p class="note">
     Charts and totals exclude <b>Dispute Approved</b>. Violations include
     <b>None</b>, <b>Dispute Denied</b>, <b>Dispute Closed</b>.
@@ -72,3 +72,4 @@
   <script src="./script.js"></script>
 </body>
 </html>
+
