@@ -1,0 +1,147 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f6f8fa;
+  margin: 20px;
+}
+
+h1, h2 {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.summary {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin: 16px 0 22px;
+  font-weight: 700;
+}
+
+.summary span {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 10px 12px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+}
+
+.card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 12px;
+  margin: 18px 0;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+}
+
+.chart {
+  width: 100%;
+  height: 520px;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 12px 0 18px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+select {
+  border: 1px solid #e5e7eb;
+  background: white;
+  padding: 8px 10px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+button {
+  border: 1px solid #e5e7eb;
+  background: white;
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+button:hover {
+  background: #f3f4f6;
+}
+
+.error {
+  color: #b91c1c;
+  background: #fff1f2;
+  border: 1px solid #fecdd3;
+  padding: 12px;
+  border-radius: 12px;
+  max-width: 1000px;
+  margin: 12px auto 18px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+}
+
+th, td {
+  border-bottom: 1px solid #eee;
+  padding: 10px;
+  font-size: 13px;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background: #111827;
+  color: white;
+  font-weight: 800;
+}
+
+tr:nth-child(even) td {
+  background: #f9fafb;
+}
+
+.toggleCol {
+  width: 42px;
+}
+
+.group-header td {
+  background: #eef2f7 !important;
+  font-weight: 800;
+  border-top: 2px solid #e5e7eb;
+}
+
+.toggle {
+  cursor: pointer;
+  user-select: none;
+  font-weight: 900;
+}
+
+.subtotal td {
+  background: #f8fafc !important;
+  font-weight: 800;
+}
+
+.hidden-row {
+  display: none;
+}
+
+tfoot td {
+  background: #111827;
+  color: white;
+  font-weight: 900;
+}
+
+.note {
+  text-align: center;
+  color: #6b7280;
+  margin-top: 10px;
+  font-size: 12px;
+}

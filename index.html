@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Weekly Safety Dashboard</title>
+
+  <link rel="stylesheet" href="./styles.css" />
+
+  <!-- Plotly -->
+  <script src="https://cdn.plot.ly/plotly-2.30.0.min.js"></script>
+
+  <!-- SheetJS (Excel export) -->
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+</head>
+
+<body>
+  <h1>📊 Weekly Safety Dashboard</h1>
+
+  <div class="toolbar">
+    <label for="weekSelect"><b>Select week:</b></label>
+    <select id="weekSelect"></select>
+  </div>
+
+  <h2 id="fileTitle"></h2>
+
+  <div id="errorBox" class="error" style="display:none;"></div>
+
+  <div class="summary">
+    <span>Total Events: <strong id="totalEvents">0</strong></span>
+    <span>Violations: <strong id="violations">0</strong></span>
+    <span>Non-Violations: <strong id="nonViolations">0</strong></span>
+  </div>
+
+  <div class="card">
+    <div id="daChart" class="chart"></div>
+  </div>
+
+  <div class="card">
+    <div id="metricChart" class="chart"></div>
+  </div>
+
+  <h2>📋 Violation Details</h2>
+
+  <table id="violationTable">
+    <thead>
+      <tr>
+        <th class="toggleCol"></th>
+        <th>Date</th>
+        <th>Delivery Associate</th>
+        <th>Metric Type</th>
+        <th>Metric Subtype</th>
+        <th>Review Details</th>
+      </tr>
+    </thead>
+
+    <tbody id="detailsBody"></tbody>
+    <tfoot id="grandTotalFoot"></tfoot>
+  </table>
+
+  <div class="toolbar">
+    <button id="expandAllBtn" type="button">Expand All</button>
+    <button id="collapseAllBtn" type="button">Collapse All</button>
+    <button id="downloadExcelBtn" type="button">Download Excel</button>
+  </div>
+
+  <p class="note">
+    Charts and totals exclude <b>Dispute Approved</b>. Violations include
+    <b>None</b>, <b>Dispute Denied</b>, <b>Dispute Closed</b>.
+  </p>
+
+  <script src="./script.js"></script>
+</body>
+</html>
